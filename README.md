@@ -1,6 +1,7 @@
 # MediaWiki Extension HideVariousTabsFromUnauthorizedUsers
 
-Disables various view tabs (and originally also namespace tabs) from users without <tt>edit</tt> permission for Vector skin.
+Disables various view tabs (and originally also namespace tabs) from users without `edit` permission for Vector skin.
+
 This extension is based on a features discussed on [this topic page](https://www.mediawiki.org/wiki/Topic:Qji4lqoeaodggoft) on May 28, 2012.
 
 ## Install
