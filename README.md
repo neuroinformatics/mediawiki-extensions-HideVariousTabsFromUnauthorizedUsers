@@ -14,7 +14,7 @@ wfLoadExtension("HideVariousTabsFromUnauthorizedUsers");
 
 ### Optional settings
 
-- `$wgVTFUUviewsToRemove`
+- `$wgHVTFUUviewsToRemove`
   - Tabs of view to remove.
   - default: `['project_talk', 'talk', 'viewsource', 'history']`
 
