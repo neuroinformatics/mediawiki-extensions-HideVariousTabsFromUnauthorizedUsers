@@ -11,10 +11,10 @@ class Hooks
      */
     public static function onSkinTemplateNavigation(\SkinTemplate $skinTemplate, array &$links)
     {
-        global $wgUser, $wgHVTFUUviewsToRemove;
+        global $wgHVTFUUviewsToRemove;
 
         // Only remove tabs if user isn't allowed to edit pages
-        if ($wgUser->isAllowed('edit')) {
+        if (\RequestContext::getMain()->getUser()->isAllowed('edit')) {
             return;
         }
 
