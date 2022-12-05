@@ -1,6 +1,6 @@
 {
 	"name": "HideVariousTabsFromUnauthorizedUsers",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"author": [
 		"Yoshihiro Okumura",
 		"Tim 'SVG' Weyer (Origianl Author)"
@@ -9,7 +9,7 @@
 	"description": "'Disables various view tabs (and originally also namespace tabs) from users without <tt>edit</tt> permission for Vector skin",
 	"license-name": "GPL-2.0-or-later",
 	"requires": {
-		"MediaWiki": ">= 1.35.3"
+		"MediaWiki": ">= 1.35.8"
 	},
 	"type": "other",
 	"config": {
@@ -22,7 +22,7 @@
 		"MediaWiki\\Extension\\HideVariousTabsFromUnauthorizedUsers\\": "includes/"
 	},
 	"Hooks": {
-		"SkinTemplateNavigation": "MediaWiki\\Extension\\HideVariousTabsFromUnauthorizedUsers\\Hooks::onSkinTemplateNavigation"
+		"SkinTemplateNavigation::Universal": "MediaWiki\\Extension\\HideVariousTabsFromUnauthorizedUsers\\Hooks::onSkinTemplateNavigation"
 	},
 	"manifest_version": 2
 }
