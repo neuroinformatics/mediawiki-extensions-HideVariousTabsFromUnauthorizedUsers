@@ -7,11 +7,9 @@ class Hooks
     /**
      * Hook: SkinTemplateNavigation.
      *
-     * @param array &$links
-     *
      * @return bool
      */
-    public function onSkinTemplateNavigation(\SkinTemplate $skinTemplate, array &$links)
+    public static function onSkinTemplateNavigation(\SkinTemplate $skinTemplate, array &$links)
     {
         global $wgUser, $wgHVTFUUviewsToRemove;
 
